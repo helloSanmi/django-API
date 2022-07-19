@@ -1,12 +1,8 @@
 from django.shortcuts import render
 
-from links.serialiers import LinkSerializer
+from links.serializers import LinkSerializer
 from .models import Link
-from rest_framework.generics import ListAPIView
-from rest_framework.generics import CreateAPIView
-from rest_framework.generics import RetrieveAPIView
-from rest_framework.generics import UpdateAPIView
-from rest_framework.generics import DestroyAPIView
+from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView, UpdateAPIView, DestroyAPIView
 
 
 class PostListApi(ListAPIView):
